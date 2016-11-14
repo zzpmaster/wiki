@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="navblue">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Wiki</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentFilter()">
+        <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!--<img src="http://res.cloudinary.com/dgl86pzep/image/upload/c_scale,r_10,w_150/v1478007502/sample.jpg"/>
+  <button>Click me</button>-->
+  <ion-list>
+    <ion-item-group *ngFor="let wiki of wikis">
+      <ion-item-divider sticky>
+        <ion-label>
+          {{wiki.date}}
+        </ion-label>
+      </ion-item-divider>
+
+      <ion-item-sliding *ngFor="let article of wiki.articles" [attr.track]="article.tracks[0]">
+        <button ion-item>
+          <h3>{{article.name}}</h3>
+          <p>{{article.time}}</p>
+          <p class="track" *ngFor="let track of article.tracks">{{track}}</p>
+        </button>
+        <ion-item-options>
+          <button icon-only ion-button color="favorite">
+            <ion-icon name="heart" color="white"></ion-icon>
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+
+    </ion-item-group>
+
+  </ion-list>
+  
+  
+
+</ion-content>

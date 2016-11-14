@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="navblue">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Gallery
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card *ngFor="let image of cloudinayImages">
+    <img src="http://res.cloudinary.com/dgl86pzep/image/upload/v1478274351/{{image.public_id}}.{{image.format}}"/>
+    <div class="card-title">{{image.context.custom.caption}}</div>
+    <div class="card-subtitle">{{image.context.custom.alt}}</div>
+  </ion-card>
+</ion-content>

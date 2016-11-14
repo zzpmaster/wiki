@@ -1,0 +1,34 @@
+$categories: (
+ Ionic: color($colors, primary),
+ TypeScript: #FED035,
+ Rxjs: #6600CC,
+ Angular: #FE4C52
+);
+
+@function auxiliary-categories() {
+  @return map-remove($categories);
+}
+
+page-wiki {
+    @each $track, $value in auxiliary-categories() {
+        ion-item-sliding[track=#{$track}] ion-label {
+            border-left: 2px solid $value;
+            padding-left: 10px;
+        }
+    }
+
+    .track {
+        font-size: 12px;
+        background: #8c8c8c;
+        color: #fff;
+        padding: 0px 6px;
+        margin-right: 5px;
+        display: inline-block;
+        border-radius: 7px;
+    }
+
+    .wikiTitle {
+        padding-left: 5px;
+        display: inline-block;
+    }
+}

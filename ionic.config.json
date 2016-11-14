@@ -1,0 +1,12 @@
+{
+  "name": "myApp_2.1.4",
+  "app_id": "",
+  "v2": true,
+  "typescript": true,
+  "proxies": [
+               {
+                "path": "/cloud",
+                "proxyUrl": "http://res.cloudinary.com/dgl86pzep"
+               }
+             ]
+}

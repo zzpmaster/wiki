@@ -1,0 +1,57 @@
+page-video {
+    .video  {
+        /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);*/
+    }
+
+    .video-subheader {
+        padding: 0;
+    }
+    .video-grid {
+        padding: 5px 0;
+
+        ion-list-header {
+            border-left: 3px solid color($colors, navblue); 
+            border-bottom: none;
+
+            ion-icon {
+                vertical-align: middle;
+
+                span {
+                    font-size: 12px; 
+                    display: inline-block;
+                    position: relative; 
+                    top: -5px;
+                }
+            }
+        }
+
+        ion-row {
+            padding: 8px 8px 0;
+
+            ion-col {
+                padding: 2px
+            }
+        }
+    }
+
+    .video-title {
+        padding-top: 5px;
+        display: block;
+        font-size: 2.0rem;
+        line-height: 1.2;
+        color: #222;
+    }
+
+    .top-slides {
+        height: 180px;
+    }
+
+    .swiper-pagination {
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+}

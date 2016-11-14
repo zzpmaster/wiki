@@ -1,0 +1,73 @@
+{
+    "categories": [
+        {
+            "name": "Ionic", 
+            "isChecked": true
+        }, {
+            "name": "TypeScript", 
+            "isChecked": true
+        }, {
+            "name": "Angular", 
+            "isChecked": true
+        }, {
+            "name": "Rxjs", 
+            "isChecked": true
+        }
+    ],
+    "Wiki":[
+        {
+            "date": "2016-11-05",
+            "articles": [
+                {
+                    "name": "Picker interface for Select component",
+                    "contents": "It would be great to be able to use a Picker for select options! Implementing this would probably also resolve this issue with an acceptable workaround Happy to write some code if it's a feature being considered... Thanks!",
+                    "time": "22:00:00",
+                    "tracks":["Ionic"]
+                },
+                {
+                    "name": "Figure out peerDependency for Typescript",
+                    "contents": "Let's figure before final. Some of our users are having trouble with it. Basically, we want to define the version in one place that the user can override easily, and then make it a wildcard peer dependency if possible in the others.",
+                    "time": "20:00:00",
+                    "tracks":["Ionic", "TypeScript"]
+                }
+            ]
+        },
+        {
+            "date": "2016-11-03",
+            "articles": [
+                {
+                    "name": "RXJS RC or Final Upgrade",
+                    "contents": "This issue is to track the upgrade of rxjs to its final release.",
+                    "time": "12:00:00",
+                    "tracks":["Rxjs"]
+                },{
+                    "name": "Component specific renderers",
+                    "contents": "What is the motivation / use case for changing the behavior?I have sometimes written components and directives that update canvas elements. For example I have written an MapComponent which tells a mapping library to draw a map on a canvas element. A template may add MarkerComponents inside the map MapComponent, which will subsequently draw markers on the same canvas element.",
+                    "time": "11:34:00",
+                    "tracks":["Angular"]
+                },{
+                    "name": "Allow router configuration so that preserveQueryParams is true by default",
+                    "contents": "Currently the router allows an individual navigation to preserve the query params (eg. Google's common hl query param) This feature request is to allow the router to be configured so that this behavior takes place for all navigation.",
+                    "time": "09:00:00",
+                    "tracks":["Angular"]
+                }
+            ]
+        },
+        {
+            "date": "2016-10-20",
+            "articles": [
+                {
+                    "name": "Allowing leading pipe in union type declarations",
+                    "contents": "I suggest we relax the syntax such that a single leading pipe symbol is allowed (but not required) in a union type declaration. Flow and F#, for example, both allow this syntax.",
+                    "time": "19:00:00",
+                    "tracks":["TypeScript"]
+                },{
+                    "name": "Control Flow Analysis + Getter Properties",
+                    "contents": "The following example doesn't compile without errors in the most recent TypeScript nightly build. ",
+                    "time": "09:23:00",
+                    "tracks":["TypeScript"]
+                }
+            ]
+        }
+    ]
+}
